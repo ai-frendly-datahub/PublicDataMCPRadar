@@ -1,0 +1,33 @@
+{
+  "date": "2026-04-13",
+  "category": "publicdata_mcp",
+  "article_count": 7,
+  "source_count": 1,
+  "matched_count": 7,
+  "top_entities": [
+    {
+      "name": "ProjectHealth",
+      "count": 24
+    },
+    {
+      "name": "MCPDomain",
+      "count": 16
+    },
+    {
+      "name": "Capability",
+      "count": 10
+    },
+    {
+      "name": "RiskScope",
+      "count": 8
+    },
+    {
+      "name": "Provider",
+      "count": 4
+    }
+  ],
+  "sources": {
+    "awesome-mcp-korea Public Data": 7
+  },
+  "generated_at": "2026-04-13T11:10:35.886738+09:00"
+}
