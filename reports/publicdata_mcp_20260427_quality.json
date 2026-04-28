@@ -1,6 +1,6 @@
 {
   "category": "publicdata_mcp",
-  "generated_at": "2026-04-28T00:41:15.055354+00:00",
+  "generated_at": "2026-04-27T23:45:17.281977+00:00",
   "scope_note": "publicdata_mcp treats the awesome-mcp-korea section as a T4 community directory seed. Repository metadata, API credential scope, and security context remain separate enrichment layers until archived, license, and advisory fields are collected.",
   "summary": {
     "total_sources": 3,
@@ -59,7 +59,7 @@
       "article_count": 7,
       "event_count": 7,
       "latest_event_at": "2026-04-24T12:44:35.669208+00:00",
-      "age_days": 3.5,
+      "age_days": 3.46,
       "latest_title": "opendata-mcp",
       "latest_url": "https://github.com/ceami/opendata-mcp",
       "latest_mcp_domain": [
