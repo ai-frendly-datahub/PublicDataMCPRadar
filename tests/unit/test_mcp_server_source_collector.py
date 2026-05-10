@@ -1,7 +1,17 @@
 from __future__ import annotations
 
+import json
+import sys
+
+import pytest
+
 from radar.collector import _collect_single, collect_sources
+from radar.exceptions import NetworkError, SourceError
+from radar.mcp_source import _jsonrpc_result, collect_mcp_server_source
 from radar.models import Source
+
+
+HANGING_MCP_SERVER = "import time; time.sleep(30)"
 
 
 def test_mcp_server_source_invokes_allowlisted_tool(monkeypatch) -> None:
@@ -80,6 +90,26 @@ def test_disabled_mcp_server_source_is_not_executed(monkeypatch) -> None:
     assert errors == []
 
 
+def test_required_env_missing_fails_before_process_launch(monkeypatch) -> None:
+    monkeypatch.delenv("MCP_RADAR_TEST_API_KEY", raising=False)
+    source = Source(
+        name="Env-gated MCP",
+        type="mcp_server",
+        url="mcp://env-gated",
+        config={
+            "transport": "stdio",
+            "command": sys.executable,
+            "args": ["-c", "raise SystemExit(99)"],
+            "tools": ["search"],
+            "env": ["MCP_RADAR_TEST_API_KEY"],
+            "timeout_seconds": 1,
+        },
+    )
+
+    with pytest.raises(SourceError, match="Missing required MCP env var"):
+        collect_mcp_server_source(source, category="mcp", limit=5, timeout=1)
+
+
 def test_mcp_payload_without_url_uses_safe_fallback(monkeypatch) -> None:
     source = Source(
         name="Fallback MCP",
@@ -98,4 +128,159 @@ def test_mcp_payload_without_url_uses_safe_fallback(monkeypatch) -> None:
 
     assert len(articles) == 1
     assert articles[0].title == "plain text result"
-    assert articles[0].link == "mcp://fallback-mcp"
+    assert articles[0].link == "mcp://fallback-mcp#plain%20text%20result"
+
+
+def test_mcp_tool_result_error_payload_is_rejected() -> None:
+    message = {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": {
+            "content": [
+                {
+                    "type": "text",
+                    "text": json.dumps(
+                        {"error": 'Unexpected token "<" from upstream API'},
+                        ensure_ascii=False,
+                    ),
+                }
+            ]
+        },
+    }
+
+    with pytest.raises(RuntimeError, match="MCP tool result error"):
+        _jsonrpc_result(message)
+
+
+def test_stdio_runtime_timeout_reports_request_context() -> None:
+    source = Source(
+        name="Hanging MCP",
+        type="mcp_server",
+        url="mcp://hanging",
+        config={
+            "transport": "stdio",
+            "command": sys.executable,
+            "args": ["-c", HANGING_MCP_SERVER],
+            "tools": ["search"],
+            "timeout_seconds": 1,
+        },
+    )
+
+    with pytest.raises(NetworkError, match="response 1 after 1s"):
+        collect_mcp_server_source(source, category="mcp", limit=5, timeout=1)
+
+
+def test_koomook_presidential_speeches_fake_stdio_fixture_collects_tool_results(
+    monkeypatch,
+) -> None:
+    monkeypatch.setenv("API_KEY", "fixture-only")
+    source = Source(
+        name="Koomook/data-go-mcp-servers - Presidential Speeches",
+        type="mcp_server",
+        url="https://github.com/Koomook/data-go-mcp-servers/tree/main/src/presidential-speeches",
+        config={
+            "transport": "stdio",
+            "command": sys.executable,
+            "args": ["fixtures/mcp/fake_koomook_presidential_speeches_mcp.py"],
+            "tools": ["list_speeches", "search_speeches", "get_recent_speeches"],
+            "env": ["API_KEY"],
+            "timeout_seconds": 5,
+            "max_items": 10,
+        },
+    )
+
+    articles = collect_mcp_server_source(
+        source, category="publicdata_mcp", limit=10, timeout=5
+    )
+
+    assert len(articles) == 3
+    titles = {article.title for article in articles}
+    assert titles == {
+        "Presidential speeches list fixture",
+        "Presidential speeches search fixture",
+        "Presidential speeches recent fixture",
+    }
+    for article in articles:
+        assert article.source == "Koomook/data-go-mcp-servers - Presidential Speeches"
+        assert article.category == "publicdata_mcp"
+        assert article.link.startswith(
+            "https://example.test/publicdata/presidential-speeches/"
+        )
+
+
+@pytest.mark.parametrize(
+    "fixture_name,tool_count,tools",
+    [
+        (
+            "fake_koomook_nps_business_enrollment_mcp.py",
+            3,
+            ["search_business", "get_business_detail", "get_period_status"],
+        ),
+        (
+            "fake_koomook_nts_business_verification_mcp.py",
+            3,
+            ["validate_business", "check_business_status", "batch_validate_businesses"],
+        ),
+        (
+            "fake_koomook_pps_narajangteo_mcp.py",
+            4,
+            [
+                "search_bid_announcements",
+                "search_successful_bids",
+                "search_contracts",
+                "get_bid_detail",
+            ],
+        ),
+        (
+            "fake_koomook_fsc_financial_info_mcp.py",
+            4,
+            [
+                "get_summary_financial_statement",
+                "get_balance_sheet",
+                "get_income_statement",
+                "search_company_financial_info",
+            ],
+        ),
+        (
+            "fake_koomook_msds_chemical_info_mcp.py",
+            7,
+            [
+                "search_chemicals",
+                "get_chemical_safety_summary",
+                "get_chemical_handling_info",
+                "get_chemical_properties",
+                "get_chemical_regulatory_info",
+                "get_chemical_section",
+                "get_complete_msds",
+            ],
+        ),
+    ],
+)
+def test_remaining_data_go_fake_fixtures_collect_tool_results(
+    monkeypatch, fixture_name: str, tool_count: int, tools: list[str]
+) -> None:
+    monkeypatch.setenv("API_KEY", "fixture-only")
+    source = Source(
+        name=f"Koomook/data-go-mcp-servers - {fixture_name}",
+        type="mcp_server",
+        url="https://github.com/Koomook/data-go-mcp-servers",
+        config={
+            "transport": "stdio",
+            "command": sys.executable,
+            "args": [f"fixtures/mcp/{fixture_name}"],
+            "tools": tools,
+            "env": ["API_KEY"],
+            "timeout_seconds": 5,
+            "max_items": 20,
+        },
+    )
+
+    articles = collect_mcp_server_source(
+        source, category="publicdata_mcp", limit=20, timeout=5
+    )
+
+    assert len(articles) == tool_count
+    for article in articles:
+        assert article.category == "publicdata_mcp"
+        assert article.title
+        assert article.link.startswith("https://example.test/publicdata/")
