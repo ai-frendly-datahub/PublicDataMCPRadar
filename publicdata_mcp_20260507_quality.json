@@ -1,0 +1,1300 @@
+{
+  "category": "publicdata_mcp",
+  "generated_at": "2026-05-07T09:33:15.336226+00:00",
+  "scope_note": "publicdata_mcp treats the awesome-mcp-korea section as a T4 community directory seed. Repository metadata, API credential scope, and security context remain separate enrichment layers until archived, license, and advisory fields are collected.",
+  "summary": {
+    "total_sources": 8,
+    "enabled_sources": 1,
+    "tracked_sources": 8,
+    "fresh_sources": 1,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 0,
+    "skipped_disabled_sources": 7,
+    "collection_error_count": 0,
+    "mcp_signal_event_count": 17,
+    "directory_seed_source_count": 1,
+    "mcp_server_candidate_count": 7,
+    "enabled_mcp_server_source_count": 0,
+    "blocked_mcp_server_source_count": 7,
+    "real_transport_smoke_tested_source_count": 0,
+    "tool_allowlist_present_source_count": 7,
+    "credential_required_source_count": 6,
+    "env_preflight_required_source_count": 6,
+    "env_preflight_ready_source_count": 0,
+    "env_preflight_missing_source_count": 6,
+    "env_preflight_missing_var_count": 6,
+    "env_preflight_not_required_source_count": 1,
+    "repository_metadata_complete_source_count": 7,
+    "repository_metadata_gap_count": 0,
+    "repository_metadata_fresh_source_count": 7,
+    "repository_metadata_stale_source_count": 0,
+    "repository_metadata_incomplete_source_count": 0,
+    "repository_metadata_missing_checked_at_source_count": 0,
+    "repository_metadata_review_required_count": 0,
+    "repository_docs_present_source_count": 7,
+    "repository_docs_missing_source_count": 0,
+    "repository_security_policy_present_source_count": 0,
+    "repository_security_advisory_checked_source_count": 7,
+    "repository_security_advisory_total_count": 0,
+    "repository_security_advisory_open_source_count": 0,
+    "repository_security_enrichment_review_required_count": 0,
+    "security_activation_gate_count": 6,
+    "activation_gate_source_count": 6,
+    "activation_gate_total_count": 6,
+    "activation_risk_scope_review_required_source_count": 0,
+    "activation_command_unresolved_source_count": 0,
+    "activation_command_discovery_checked_source_count": 6,
+    "activation_command_discovery_resolved_source_count": 6,
+    "activation_command_discovery_unresolved_source_count": 0,
+    "activation_command_discovery_multi_server_ambiguous_source_count": 0,
+    "activation_command_discovery_status_counts": {
+      "resolved_package_uvx": 6
+    },
+    "activation_env_secret_required_source_count": 0,
+    "activation_tool_allowlist_required_source_count": 0,
+    "activation_registry_crosscheck_required_source_count": 0,
+    "activation_fake_transport_required_source_count": 0,
+    "activation_real_transport_required_source_count": 6,
+    "activation_runtime_review_required_source_count": 0,
+    "activation_ready_for_fake_transport_source_count": 0,
+    "daily_review_item_count": 13,
+    "mcp_directory_entry_events": 7,
+    "mcp_tool_result_events": 0,
+    "linked_repository_metadata_events": 7,
+    "risk_scope_signal_events": 3
+  },
+  "sources": [
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "source_type": "github_readme_section",
+      "enabled": true,
+      "trust_tier": "T4_community",
+      "content_type": "mcp_directory",
+      "collection_tier": "C1_static_list",
+      "producer_role": "",
+      "info_purpose": [],
+      "tracked": true,
+      "event_model": "mcp_directory_entry",
+      "repository": "",
+      "activation_status": "",
+      "activation_gates": [],
+      "activation_gate_count": 0,
+      "activation_next_gate": "",
+      "activation_command_discovery_status": "",
+      "activation_command_discovery_checked_at": "",
+      "tools_count": 0,
+      "env_count": 0,
+      "env_preflight_status": "not_required",
+      "env_required_names": [],
+      "env_missing_names": [],
+      "repository_metadata_gaps": [
+        "repository",
+        "github_archived",
+        "github_license",
+        "github_pushed_at"
+      ],
+      "repository_metadata": {},
+      "freshness_sla_days": 7.0,
+      "status": "fresh",
+      "article_count": 7,
+      "event_count": 7,
+      "latest_event_at": "2026-05-07T09:33:13.352380+00:00",
+      "age_days": 0.0,
+      "latest_title": "be-node-seoul-data-mcp",
+      "latest_url": "https://github.com/pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "latest_mcp_domain": [
+        "공공데이터"
+      ],
+      "latest_provider": [
+        "공공데이터"
+      ],
+      "latest_capability": [
+        "조회"
+      ],
+      "latest_risk_scope": [
+        "api"
+      ],
+      "latest_required_field_proxy": {
+        "repository": true,
+        "source_section": true,
+        "source_url": true
+      },
+      "errors": []
+    },
+    {
+      "source": "pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "source_type": "mcp_server",
+      "enabled": false,
+      "trust_tier": "T4_community",
+      "content_type": "mcp_tool_result",
+      "collection_tier": "C4_mcp_tool",
+      "producer_role": "",
+      "info_purpose": [],
+      "tracked": true,
+      "event_model": "mcp_tool_result",
+      "repository": "pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "activation_status": "permanently_disabled_redundant",
+      "activation_gates": [],
+      "activation_gate_count": 0,
+      "activation_next_gate": "",
+      "activation_command_discovery_status": "",
+      "activation_command_discovery_checked_at": "",
+      "tools_count": 2,
+      "env_count": 0,
+      "env_preflight_status": "not_required",
+      "env_required_names": [],
+      "env_missing_names": [],
+      "repository_metadata_gaps": [],
+      "repository_metadata": {
+        "status": "fresh",
+        "repository": "pinnaclesoft-ko/be-node-seoul-data-mcp",
+        "checked_at": "2026-05-07T05:20:56+00:00",
+        "age_days": 0.18,
+        "freshness_sla_days": 7.0,
+        "missing_fields": [],
+        "github_pushed_at": "2025-04-03T06:29:08Z",
+        "github_license": "MIT",
+        "github_archived": false,
+        "github_disabled": false,
+        "docs_advisory_checked_at": "2026-04-30T05:06:52+00:00",
+        "github_readme_present": true,
+        "github_readme_path": "README.md",
+        "github_docs_present": true,
+        "github_docs_paths": [
+          "README.md",
+          "docs/"
+        ],
+        "github_security_policy_present": false,
+        "github_security_policy_paths": [],
+        "github_security_advisory_access_status": "checked",
+        "github_security_advisory_count": 0,
+        "github_security_advisory_open_count": 0,
+        "github_security_advisory_published_count": 0,
+        "github_security_advisory_state_counts": {},
+        "github_security_advisory_ids": []
+      },
+      "freshness_sla_days": 7.0,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_mcp_domain": [],
+      "latest_provider": [],
+      "latest_capability": [],
+      "latest_risk_scope": [],
+      "latest_required_field_proxy": {},
+      "errors": []
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - NPS Business Enrollment",
+      "source_type": "mcp_server",
+      "enabled": false,
+      "trust_tier": "T4_community",
+      "content_type": "mcp_tool_result",
+      "collection_tier": "C4_mcp_tool",
+      "producer_role": "",
+      "info_purpose": [],
+      "tracked": true,
+      "event_model": "mcp_tool_result",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ],
+      "activation_gate_count": 1,
+      "activation_next_gate": "real_transport_smoke_test_required",
+      "activation_command_discovery_status": "resolved_package_uvx",
+      "activation_command_discovery_checked_at": "2026-04-30T08:05:00+00:00",
+      "tools_count": 3,
+      "env_count": 1,
+      "env_preflight_status": "missing_required_env",
+      "env_required_names": [
+        "API_KEY"
+      ],
+      "env_missing_names": [
+        "API_KEY"
+      ],
+      "repository_metadata_gaps": [],
+      "repository_metadata": {
+        "status": "fresh",
+        "repository": "Koomook/data-go-mcp-servers",
+        "checked_at": "2026-05-07T05:20:56+00:00",
+        "age_days": 0.18,
+        "freshness_sla_days": 7.0,
+        "missing_fields": [],
+        "github_pushed_at": "2025-09-16T22:32:34Z",
+        "github_license": "Apache-2.0",
+        "github_archived": false,
+        "github_disabled": false,
+        "docs_advisory_checked_at": "2026-04-30T05:06:52+00:00",
+        "github_readme_present": true,
+        "github_readme_path": "README.md",
+        "github_docs_present": true,
+        "github_docs_paths": [
+          "README.md",
+          "docs/"
+        ],
+        "github_security_policy_present": false,
+        "github_security_policy_paths": [],
+        "github_security_advisory_access_status": "checked",
+        "github_security_advisory_count": 0,
+        "github_security_advisory_open_count": 0,
+        "github_security_advisory_published_count": 0,
+        "github_security_advisory_state_counts": {},
+        "github_security_advisory_ids": []
+      },
+      "freshness_sla_days": 7.0,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_mcp_domain": [],
+      "latest_provider": [],
+      "latest_capability": [],
+      "latest_risk_scope": [],
+      "latest_required_field_proxy": {},
+      "errors": []
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - NTS Business Verification",
+      "source_type": "mcp_server",
+      "enabled": false,
+      "trust_tier": "T4_community",
+      "content_type": "mcp_tool_result",
+      "collection_tier": "C4_mcp_tool",
+      "producer_role": "",
+      "info_purpose": [],
+      "tracked": true,
+      "event_model": "mcp_tool_result",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ],
+      "activation_gate_count": 1,
+      "activation_next_gate": "real_transport_smoke_test_required",
+      "activation_command_discovery_status": "resolved_package_uvx",
+      "activation_command_discovery_checked_at": "2026-04-30T08:05:00+00:00",
+      "tools_count": 3,
+      "env_count": 1,
+      "env_preflight_status": "missing_required_env",
+      "env_required_names": [
+        "API_KEY"
+      ],
+      "env_missing_names": [
+        "API_KEY"
+      ],
+      "repository_metadata_gaps": [],
+      "repository_metadata": {
+        "status": "fresh",
+        "repository": "Koomook/data-go-mcp-servers",
+        "checked_at": "2026-05-07T05:20:56+00:00",
+        "age_days": 0.18,
+        "freshness_sla_days": 7.0,
+        "missing_fields": [],
+        "github_pushed_at": "2025-09-16T22:32:34Z",
+        "github_license": "Apache-2.0",
+        "github_archived": false,
+        "github_disabled": false,
+        "docs_advisory_checked_at": "2026-04-30T05:06:52+00:00",
+        "github_readme_present": true,
+        "github_readme_path": "README.md",
+        "github_docs_present": true,
+        "github_docs_paths": [
+          "README.md",
+          "docs/"
+        ],
+        "github_security_policy_present": false,
+        "github_security_policy_paths": [],
+        "github_security_advisory_access_status": "checked",
+        "github_security_advisory_count": 0,
+        "github_security_advisory_open_count": 0,
+        "github_security_advisory_published_count": 0,
+        "github_security_advisory_state_counts": {},
+        "github_security_advisory_ids": []
+      },
+      "freshness_sla_days": 7.0,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_mcp_domain": [],
+      "latest_provider": [],
+      "latest_capability": [],
+      "latest_risk_scope": [],
+      "latest_required_field_proxy": {},
+      "errors": []
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - PPS Narajangteo",
+      "source_type": "mcp_server",
+      "enabled": false,
+      "trust_tier": "T4_community",
+      "content_type": "mcp_tool_result",
+      "collection_tier": "C4_mcp_tool",
+      "producer_role": "",
+      "info_purpose": [],
+      "tracked": true,
+      "event_model": "mcp_tool_result",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ],
+      "activation_gate_count": 1,
+      "activation_next_gate": "real_transport_smoke_test_required",
+      "activation_command_discovery_status": "resolved_package_uvx",
+      "activation_command_discovery_checked_at": "2026-04-30T08:05:00+00:00",
+      "tools_count": 4,
+      "env_count": 1,
+      "env_preflight_status": "missing_required_env",
+      "env_required_names": [
+        "API_KEY"
+      ],
+      "env_missing_names": [
+        "API_KEY"
+      ],
+      "repository_metadata_gaps": [],
+      "repository_metadata": {
+        "status": "fresh",
+        "repository": "Koomook/data-go-mcp-servers",
+        "checked_at": "2026-05-07T05:20:56+00:00",
+        "age_days": 0.18,
+        "freshness_sla_days": 7.0,
+        "missing_fields": [],
+        "github_pushed_at": "2025-09-16T22:32:34Z",
+        "github_license": "Apache-2.0",
+        "github_archived": false,
+        "github_disabled": false,
+        "docs_advisory_checked_at": "2026-04-30T05:06:52+00:00",
+        "github_readme_present": true,
+        "github_readme_path": "README.md",
+        "github_docs_present": true,
+        "github_docs_paths": [
+          "README.md",
+          "docs/"
+        ],
+        "github_security_policy_present": false,
+        "github_security_policy_paths": [],
+        "github_security_advisory_access_status": "checked",
+        "github_security_advisory_count": 0,
+        "github_security_advisory_open_count": 0,
+        "github_security_advisory_published_count": 0,
+        "github_security_advisory_state_counts": {},
+        "github_security_advisory_ids": []
+      },
+      "freshness_sla_days": 7.0,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_mcp_domain": [],
+      "latest_provider": [],
+      "latest_capability": [],
+      "latest_risk_scope": [],
+      "latest_required_field_proxy": {},
+      "errors": []
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - FSC Financial Info",
+      "source_type": "mcp_server",
+      "enabled": false,
+      "trust_tier": "T4_community",
+      "content_type": "mcp_tool_result",
+      "collection_tier": "C4_mcp_tool",
+      "producer_role": "",
+      "info_purpose": [],
+      "tracked": true,
+      "event_model": "mcp_tool_result",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ],
+      "activation_gate_count": 1,
+      "activation_next_gate": "real_transport_smoke_test_required",
+      "activation_command_discovery_status": "resolved_package_uvx",
+      "activation_command_discovery_checked_at": "2026-04-30T08:05:00+00:00",
+      "tools_count": 4,
+      "env_count": 1,
+      "env_preflight_status": "missing_required_env",
+      "env_required_names": [
+        "API_KEY"
+      ],
+      "env_missing_names": [
+        "API_KEY"
+      ],
+      "repository_metadata_gaps": [],
+      "repository_metadata": {
+        "status": "fresh",
+        "repository": "Koomook/data-go-mcp-servers",
+        "checked_at": "2026-05-07T05:20:56+00:00",
+        "age_days": 0.18,
+        "freshness_sla_days": 7.0,
+        "missing_fields": [],
+        "github_pushed_at": "2025-09-16T22:32:34Z",
+        "github_license": "Apache-2.0",
+        "github_archived": false,
+        "github_disabled": false,
+        "docs_advisory_checked_at": "2026-04-30T05:06:52+00:00",
+        "github_readme_present": true,
+        "github_readme_path": "README.md",
+        "github_docs_present": true,
+        "github_docs_paths": [
+          "README.md",
+          "docs/"
+        ],
+        "github_security_policy_present": false,
+        "github_security_policy_paths": [],
+        "github_security_advisory_access_status": "checked",
+        "github_security_advisory_count": 0,
+        "github_security_advisory_open_count": 0,
+        "github_security_advisory_published_count": 0,
+        "github_security_advisory_state_counts": {},
+        "github_security_advisory_ids": []
+      },
+      "freshness_sla_days": 7.0,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_mcp_domain": [],
+      "latest_provider": [],
+      "latest_capability": [],
+      "latest_risk_scope": [],
+      "latest_required_field_proxy": {},
+      "errors": []
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - Presidential Speeches",
+      "source_type": "mcp_server",
+      "enabled": false,
+      "trust_tier": "T4_community",
+      "content_type": "mcp_tool_result",
+      "collection_tier": "C4_mcp_tool",
+      "producer_role": "",
+      "info_purpose": [],
+      "tracked": true,
+      "event_model": "mcp_tool_result",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ],
+      "activation_gate_count": 1,
+      "activation_next_gate": "real_transport_smoke_test_required",
+      "activation_command_discovery_status": "resolved_package_uvx",
+      "activation_command_discovery_checked_at": "2026-04-30T08:05:00+00:00",
+      "tools_count": 3,
+      "env_count": 1,
+      "env_preflight_status": "missing_required_env",
+      "env_required_names": [
+        "API_KEY"
+      ],
+      "env_missing_names": [
+        "API_KEY"
+      ],
+      "repository_metadata_gaps": [],
+      "repository_metadata": {
+        "status": "fresh",
+        "repository": "Koomook/data-go-mcp-servers",
+        "checked_at": "2026-05-07T05:20:56+00:00",
+        "age_days": 0.18,
+        "freshness_sla_days": 7.0,
+        "missing_fields": [],
+        "github_pushed_at": "2025-09-16T22:32:34Z",
+        "github_license": "Apache-2.0",
+        "github_archived": false,
+        "github_disabled": false,
+        "docs_advisory_checked_at": "2026-04-30T05:06:52+00:00",
+        "github_readme_present": true,
+        "github_readme_path": "README.md",
+        "github_docs_present": true,
+        "github_docs_paths": [
+          "README.md",
+          "docs/"
+        ],
+        "github_security_policy_present": false,
+        "github_security_policy_paths": [],
+        "github_security_advisory_access_status": "checked",
+        "github_security_advisory_count": 0,
+        "github_security_advisory_open_count": 0,
+        "github_security_advisory_published_count": 0,
+        "github_security_advisory_state_counts": {},
+        "github_security_advisory_ids": []
+      },
+      "freshness_sla_days": 7.0,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_mcp_domain": [],
+      "latest_provider": [],
+      "latest_capability": [],
+      "latest_risk_scope": [],
+      "latest_required_field_proxy": {},
+      "errors": []
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - MSDS Chemical Info",
+      "source_type": "mcp_server",
+      "enabled": false,
+      "trust_tier": "T4_community",
+      "content_type": "mcp_tool_result",
+      "collection_tier": "C4_mcp_tool",
+      "producer_role": "",
+      "info_purpose": [],
+      "tracked": true,
+      "event_model": "mcp_tool_result",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ],
+      "activation_gate_count": 1,
+      "activation_next_gate": "real_transport_smoke_test_required",
+      "activation_command_discovery_status": "resolved_package_uvx",
+      "activation_command_discovery_checked_at": "2026-04-30T08:05:00+00:00",
+      "tools_count": 7,
+      "env_count": 1,
+      "env_preflight_status": "missing_required_env",
+      "env_required_names": [
+        "API_KEY"
+      ],
+      "env_missing_names": [
+        "API_KEY"
+      ],
+      "repository_metadata_gaps": [],
+      "repository_metadata": {
+        "status": "fresh",
+        "repository": "Koomook/data-go-mcp-servers",
+        "checked_at": "2026-05-07T05:20:56+00:00",
+        "age_days": 0.18,
+        "freshness_sla_days": 7.0,
+        "missing_fields": [],
+        "github_pushed_at": "2025-09-16T22:32:34Z",
+        "github_license": "Apache-2.0",
+        "github_archived": false,
+        "github_disabled": false,
+        "docs_advisory_checked_at": "2026-04-30T05:06:52+00:00",
+        "github_readme_present": true,
+        "github_readme_path": "README.md",
+        "github_docs_present": true,
+        "github_docs_paths": [
+          "README.md",
+          "docs/"
+        ],
+        "github_security_policy_present": false,
+        "github_security_policy_paths": [],
+        "github_security_advisory_access_status": "checked",
+        "github_security_advisory_count": 0,
+        "github_security_advisory_open_count": 0,
+        "github_security_advisory_published_count": 0,
+        "github_security_advisory_state_counts": {},
+        "github_security_advisory_ids": []
+      },
+      "freshness_sla_days": 7.0,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_mcp_domain": [],
+      "latest_provider": [],
+      "latest_capability": [],
+      "latest_risk_scope": [],
+      "latest_required_field_proxy": {},
+      "errors": []
+    }
+  ],
+  "events": [
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "mcp_directory_entry",
+      "title": "be-node-seoul-data-mcp",
+      "url": "https://github.com/pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "event_at": "2026-05-07T09:33:13.352380+00:00",
+      "mcp_domain": [
+        "공공데이터"
+      ],
+      "provider": [
+        "공공데이터"
+      ],
+      "capability": [
+        "조회"
+      ],
+      "risk_scope": [
+        "api"
+      ],
+      "project_health": [
+        "mcp",
+        "api",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "source_section": true,
+        "source_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "risk_scope_signal",
+      "title": "be-node-seoul-data-mcp",
+      "url": "https://github.com/pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "event_at": "2026-05-07T09:33:13.352380+00:00",
+      "mcp_domain": [
+        "공공데이터"
+      ],
+      "provider": [
+        "공공데이터"
+      ],
+      "capability": [
+        "조회"
+      ],
+      "risk_scope": [
+        "api"
+      ],
+      "project_health": [
+        "mcp",
+        "api",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "risk_scope": true,
+        "evidence_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "mcp_directory_entry",
+      "title": "opendata-mcp",
+      "url": "https://github.com/ceami/opendata-mcp",
+      "event_at": "2026-04-30T08:37:14.351543+00:00",
+      "mcp_domain": [
+        "공공데이터"
+      ],
+      "provider": [
+        "공공데이터"
+      ],
+      "capability": [
+        "검색"
+      ],
+      "risk_scope": [
+        "문서"
+      ],
+      "project_health": [
+        "mcp",
+        "서버",
+        "문서"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "source_section": true,
+        "source_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "risk_scope_signal",
+      "title": "opendata-mcp",
+      "url": "https://github.com/ceami/opendata-mcp",
+      "event_at": "2026-04-30T08:37:14.351543+00:00",
+      "mcp_domain": [
+        "공공데이터"
+      ],
+      "provider": [
+        "공공데이터"
+      ],
+      "capability": [
+        "검색"
+      ],
+      "risk_scope": [
+        "문서"
+      ],
+      "project_health": [
+        "mcp",
+        "서버",
+        "문서"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "risk_scope": true,
+        "evidence_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "mcp_directory_entry",
+      "title": "korea-stats-mcp",
+      "url": "https://github.com/Dayoooun/korea-stats-mcp",
+      "event_at": "2026-04-30T08:37:14.351541+00:00",
+      "mcp_domain": [
+        "kosis",
+        "통계"
+      ],
+      "provider": [
+        "kosis"
+      ],
+      "capability": [
+        "검색",
+        "분석"
+      ],
+      "risk_scope": [],
+      "project_health": [
+        "mcp",
+        "openapi",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "source_section": true,
+        "source_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "mcp_directory_entry",
+      "title": "k-targo-subway-mcp-server",
+      "url": "https://github.com/slicequeue/k-targo-subway-mcp-server",
+      "event_at": "2026-04-30T08:37:14.351540+00:00",
+      "mcp_domain": [
+        "교통"
+      ],
+      "provider": [],
+      "capability": [
+        "검색",
+        "조회"
+      ],
+      "risk_scope": [
+        "api"
+      ],
+      "project_health": [
+        "mcp",
+        "server",
+        "api",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "source_section": true,
+        "source_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "risk_scope_signal",
+      "title": "k-targo-subway-mcp-server",
+      "url": "https://github.com/slicequeue/k-targo-subway-mcp-server",
+      "event_at": "2026-04-30T08:37:14.351540+00:00",
+      "mcp_domain": [
+        "교통"
+      ],
+      "provider": [],
+      "capability": [
+        "검색",
+        "조회"
+      ],
+      "risk_scope": [
+        "api"
+      ],
+      "project_health": [
+        "mcp",
+        "server",
+        "api",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "risk_scope": true,
+        "evidence_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "mcp_directory_entry",
+      "title": "k-mfds-fooddb-mcp-server",
+      "url": "https://github.com/slicequeue/k-mfds-fooddb-mcp-server",
+      "event_at": "2026-04-30T08:37:14.351538+00:00",
+      "mcp_domain": [],
+      "provider": [],
+      "capability": [
+        "검색",
+        "조회"
+      ],
+      "risk_scope": [],
+      "project_health": [
+        "mcp",
+        "server",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "source_section": true,
+        "source_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "mcp_directory_entry",
+      "title": "data4library-mcp",
+      "url": "https://github.com/isnow890/data4library-mcp",
+      "event_at": "2026-04-30T08:37:14.351536+00:00",
+      "mcp_domain": [
+        "통계",
+        "도서관"
+      ],
+      "provider": [],
+      "capability": [
+        "검색"
+      ],
+      "risk_scope": [],
+      "project_health": [
+        "mcp",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "source_section": true,
+        "source_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "mcp_directory_entry",
+      "title": "data-go-mcp-servers",
+      "url": "https://github.com/Koomook/data-go-mcp-servers",
+      "event_at": "2026-04-30T08:37:14.351534+00:00",
+      "mcp_domain": [
+        "data.go.kr",
+        "공공데이터"
+      ],
+      "provider": [
+        "data.go.kr",
+        "공공데이터"
+      ],
+      "capability": [
+        "조회"
+      ],
+      "risk_scope": [],
+      "project_health": [
+        "mcp",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "source_section": true,
+        "source_url": true
+      }
+    },
+    {
+      "source": "pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "event_model": "linked_repository_metadata",
+      "title": "pinnaclesoft-ko/be-node-seoul-data-mcp repository metadata",
+      "url": "https://github.com/pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "event_at": "2025-04-03T06:29:08+00:00",
+      "mcp_domain": [],
+      "provider": [],
+      "capability": [],
+      "risk_scope": [],
+      "project_health": [],
+      "required_field_proxy": {
+        "repository": true,
+        "archived": true,
+        "license": true,
+        "docs": true,
+        "security_advisory_check": true
+      },
+      "repository": "pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "repository_metadata_status": "fresh",
+      "repository_metadata_checked_at": "2026-05-07T05:20:56+00:00",
+      "github_pushed_at": "2025-04-03T06:29:08Z",
+      "github_license": "MIT",
+      "github_archived": false,
+      "github_readme_present": true,
+      "github_docs_present": true,
+      "github_docs_paths": [
+        "README.md",
+        "docs/"
+      ],
+      "github_security_policy_present": false,
+      "github_security_advisory_access_status": "checked",
+      "github_security_advisory_count": 0,
+      "github_security_advisory_open_count": 0
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - NPS Business Enrollment",
+      "event_model": "linked_repository_metadata",
+      "title": "Koomook/data-go-mcp-servers repository metadata",
+      "url": "https://github.com/Koomook/data-go-mcp-servers/tree/main/src/nps-business-enrollment",
+      "event_at": "2025-09-16T22:32:34+00:00",
+      "mcp_domain": [],
+      "provider": [],
+      "capability": [],
+      "risk_scope": [],
+      "project_health": [],
+      "required_field_proxy": {
+        "repository": true,
+        "archived": true,
+        "license": true,
+        "docs": true,
+        "security_advisory_check": true
+      },
+      "repository": "Koomook/data-go-mcp-servers",
+      "repository_metadata_status": "fresh",
+      "repository_metadata_checked_at": "2026-05-07T05:20:56+00:00",
+      "github_pushed_at": "2025-09-16T22:32:34Z",
+      "github_license": "Apache-2.0",
+      "github_archived": false,
+      "github_readme_present": true,
+      "github_docs_present": true,
+      "github_docs_paths": [
+        "README.md",
+        "docs/"
+      ],
+      "github_security_policy_present": false,
+      "github_security_advisory_access_status": "checked",
+      "github_security_advisory_count": 0,
+      "github_security_advisory_open_count": 0
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - NTS Business Verification",
+      "event_model": "linked_repository_metadata",
+      "title": "Koomook/data-go-mcp-servers repository metadata",
+      "url": "https://github.com/Koomook/data-go-mcp-servers/tree/main/src/nts-business-verification",
+      "event_at": "2025-09-16T22:32:34+00:00",
+      "mcp_domain": [],
+      "provider": [],
+      "capability": [],
+      "risk_scope": [],
+      "project_health": [],
+      "required_field_proxy": {
+        "repository": true,
+        "archived": true,
+        "license": true,
+        "docs": true,
+        "security_advisory_check": true
+      },
+      "repository": "Koomook/data-go-mcp-servers",
+      "repository_metadata_status": "fresh",
+      "repository_metadata_checked_at": "2026-05-07T05:20:56+00:00",
+      "github_pushed_at": "2025-09-16T22:32:34Z",
+      "github_license": "Apache-2.0",
+      "github_archived": false,
+      "github_readme_present": true,
+      "github_docs_present": true,
+      "github_docs_paths": [
+        "README.md",
+        "docs/"
+      ],
+      "github_security_policy_present": false,
+      "github_security_advisory_access_status": "checked",
+      "github_security_advisory_count": 0,
+      "github_security_advisory_open_count": 0
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - PPS Narajangteo",
+      "event_model": "linked_repository_metadata",
+      "title": "Koomook/data-go-mcp-servers repository metadata",
+      "url": "https://github.com/Koomook/data-go-mcp-servers/tree/main/src/pps-narajangteo",
+      "event_at": "2025-09-16T22:32:34+00:00",
+      "mcp_domain": [],
+      "provider": [],
+      "capability": [],
+      "risk_scope": [],
+      "project_health": [],
+      "required_field_proxy": {
+        "repository": true,
+        "archived": true,
+        "license": true,
+        "docs": true,
+        "security_advisory_check": true
+      },
+      "repository": "Koomook/data-go-mcp-servers",
+      "repository_metadata_status": "fresh",
+      "repository_metadata_checked_at": "2026-05-07T05:20:56+00:00",
+      "github_pushed_at": "2025-09-16T22:32:34Z",
+      "github_license": "Apache-2.0",
+      "github_archived": false,
+      "github_readme_present": true,
+      "github_docs_present": true,
+      "github_docs_paths": [
+        "README.md",
+        "docs/"
+      ],
+      "github_security_policy_present": false,
+      "github_security_advisory_access_status": "checked",
+      "github_security_advisory_count": 0,
+      "github_security_advisory_open_count": 0
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - FSC Financial Info",
+      "event_model": "linked_repository_metadata",
+      "title": "Koomook/data-go-mcp-servers repository metadata",
+      "url": "https://github.com/Koomook/data-go-mcp-servers/tree/main/src/fsc-financial-info",
+      "event_at": "2025-09-16T22:32:34+00:00",
+      "mcp_domain": [],
+      "provider": [],
+      "capability": [],
+      "risk_scope": [],
+      "project_health": [],
+      "required_field_proxy": {
+        "repository": true,
+        "archived": true,
+        "license": true,
+        "docs": true,
+        "security_advisory_check": true
+      },
+      "repository": "Koomook/data-go-mcp-servers",
+      "repository_metadata_status": "fresh",
+      "repository_metadata_checked_at": "2026-05-07T05:20:56+00:00",
+      "github_pushed_at": "2025-09-16T22:32:34Z",
+      "github_license": "Apache-2.0",
+      "github_archived": false,
+      "github_readme_present": true,
+      "github_docs_present": true,
+      "github_docs_paths": [
+        "README.md",
+        "docs/"
+      ],
+      "github_security_policy_present": false,
+      "github_security_advisory_access_status": "checked",
+      "github_security_advisory_count": 0,
+      "github_security_advisory_open_count": 0
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - Presidential Speeches",
+      "event_model": "linked_repository_metadata",
+      "title": "Koomook/data-go-mcp-servers repository metadata",
+      "url": "https://github.com/Koomook/data-go-mcp-servers/tree/main/src/presidential-speeches",
+      "event_at": "2025-09-16T22:32:34+00:00",
+      "mcp_domain": [],
+      "provider": [],
+      "capability": [],
+      "risk_scope": [],
+      "project_health": [],
+      "required_field_proxy": {
+        "repository": true,
+        "archived": true,
+        "license": true,
+        "docs": true,
+        "security_advisory_check": true
+      },
+      "repository": "Koomook/data-go-mcp-servers",
+      "repository_metadata_status": "fresh",
+      "repository_metadata_checked_at": "2026-05-07T05:20:56+00:00",
+      "github_pushed_at": "2025-09-16T22:32:34Z",
+      "github_license": "Apache-2.0",
+      "github_archived": false,
+      "github_readme_present": true,
+      "github_docs_present": true,
+      "github_docs_paths": [
+        "README.md",
+        "docs/"
+      ],
+      "github_security_policy_present": false,
+      "github_security_advisory_access_status": "checked",
+      "github_security_advisory_count": 0,
+      "github_security_advisory_open_count": 0
+    },
+    {
+      "source": "Koomook/data-go-mcp-servers - MSDS Chemical Info",
+      "event_model": "linked_repository_metadata",
+      "title": "Koomook/data-go-mcp-servers repository metadata",
+      "url": "https://github.com/Koomook/data-go-mcp-servers/tree/main/src/msds-chemical-info",
+      "event_at": "2025-09-16T22:32:34+00:00",
+      "mcp_domain": [],
+      "provider": [],
+      "capability": [],
+      "risk_scope": [],
+      "project_health": [],
+      "required_field_proxy": {
+        "repository": true,
+        "archived": true,
+        "license": true,
+        "docs": true,
+        "security_advisory_check": true
+      },
+      "repository": "Koomook/data-go-mcp-servers",
+      "repository_metadata_status": "fresh",
+      "repository_metadata_checked_at": "2026-05-07T05:20:56+00:00",
+      "github_pushed_at": "2025-09-16T22:32:34Z",
+      "github_license": "Apache-2.0",
+      "github_archived": false,
+      "github_readme_present": true,
+      "github_docs_present": true,
+      "github_docs_paths": [
+        "README.md",
+        "docs/"
+      ],
+      "github_security_policy_present": false,
+      "github_security_advisory_access_status": "checked",
+      "github_security_advisory_count": 0,
+      "github_security_advisory_open_count": 0
+    }
+  ],
+  "daily_review_items": [
+    {
+      "reason": "mcp_candidate_disabled",
+      "source": "pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "repository": "pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "activation_status": "permanently_disabled_redundant",
+      "activation_gates": []
+    },
+    {
+      "reason": "mcp_env_preflight_missing",
+      "source": "Koomook/data-go-mcp-servers - NPS Business Enrollment",
+      "repository": "Koomook/data-go-mcp-servers",
+      "missing_env": [
+        "API_KEY"
+      ],
+      "activation_status": "blocked_env_required"
+    },
+    {
+      "reason": "mcp_candidate_disabled",
+      "source": "Koomook/data-go-mcp-servers - NPS Business Enrollment",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ]
+    },
+    {
+      "reason": "mcp_env_preflight_missing",
+      "source": "Koomook/data-go-mcp-servers - NTS Business Verification",
+      "repository": "Koomook/data-go-mcp-servers",
+      "missing_env": [
+        "API_KEY"
+      ],
+      "activation_status": "blocked_env_required"
+    },
+    {
+      "reason": "mcp_candidate_disabled",
+      "source": "Koomook/data-go-mcp-servers - NTS Business Verification",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ]
+    },
+    {
+      "reason": "mcp_env_preflight_missing",
+      "source": "Koomook/data-go-mcp-servers - PPS Narajangteo",
+      "repository": "Koomook/data-go-mcp-servers",
+      "missing_env": [
+        "API_KEY"
+      ],
+      "activation_status": "blocked_env_required"
+    },
+    {
+      "reason": "mcp_candidate_disabled",
+      "source": "Koomook/data-go-mcp-servers - PPS Narajangteo",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ]
+    },
+    {
+      "reason": "mcp_env_preflight_missing",
+      "source": "Koomook/data-go-mcp-servers - FSC Financial Info",
+      "repository": "Koomook/data-go-mcp-servers",
+      "missing_env": [
+        "API_KEY"
+      ],
+      "activation_status": "blocked_env_required"
+    },
+    {
+      "reason": "mcp_candidate_disabled",
+      "source": "Koomook/data-go-mcp-servers - FSC Financial Info",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ]
+    },
+    {
+      "reason": "mcp_env_preflight_missing",
+      "source": "Koomook/data-go-mcp-servers - Presidential Speeches",
+      "repository": "Koomook/data-go-mcp-servers",
+      "missing_env": [
+        "API_KEY"
+      ],
+      "activation_status": "blocked_env_required"
+    },
+    {
+      "reason": "mcp_candidate_disabled",
+      "source": "Koomook/data-go-mcp-servers - Presidential Speeches",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ]
+    },
+    {
+      "reason": "mcp_env_preflight_missing",
+      "source": "Koomook/data-go-mcp-servers - MSDS Chemical Info",
+      "repository": "Koomook/data-go-mcp-servers",
+      "missing_env": [
+        "API_KEY"
+      ],
+      "activation_status": "blocked_env_required"
+    },
+    {
+      "reason": "mcp_candidate_disabled",
+      "source": "Koomook/data-go-mcp-servers - MSDS Chemical Info",
+      "repository": "Koomook/data-go-mcp-servers",
+      "activation_status": "blocked_env_required",
+      "activation_gates": [
+        "real_transport_smoke_test_required"
+      ]
+    }
+  ],
+  "source_backlog": {
+    "operational_candidates": [
+      {
+        "id": "github_repository_metadata",
+        "name": "GitHub repository metadata enrichment",
+        "signal_type": "linked_repository_metadata",
+        "activation_gate": "rate-limit handling, repository canonicalization, and archived/license mapping"
+      },
+      {
+        "id": "mcp_registry_crosscheck",
+        "name": "MCP registry cross-check",
+        "signal_type": "mcp_registry_presence",
+        "activation_gate": "registry API availability and canonical package mapping"
+      },
+      {
+        "id": "security_advisory_crosscheck",
+        "name": "GitHub security advisory cross-check",
+        "signal_type": "security_risk",
+        "activation_gate": "advisory API coverage and false positive handling"
+      }
+    ]
+  },
+  "errors": []
+}
