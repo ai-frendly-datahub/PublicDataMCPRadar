@@ -1,6 +1,6 @@
 {
   "category": "publicdata_mcp",
-  "generated_at": "2026-05-13T17:07:27.503761+00:00",
+  "generated_at": "2026-05-13T12:38:01.882167+00:00",
   "scope_note": "publicdata_mcp treats the awesome-mcp-korea section as a T4 community directory seed. Repository metadata, API credential scope, and security context remain separate enrichment layers until archived, license, and advisory fields are collected.",
   "summary": {
     "total_sources": 8,
@@ -101,10 +101,10 @@
       "status": "fresh",
       "article_count": 8,
       "event_count": 8,
-      "latest_event_at": "2026-05-13T17:07:26.739891+00:00",
+      "latest_event_at": "2026-05-13T12:38:01.172305+00:00",
       "age_days": 0.0,
-      "latest_title": "opendata-mcp",
-      "latest_url": "https://github.com/ceami/opendata-mcp",
+      "latest_title": "be-node-seoul-data-mcp",
+      "latest_url": "https://github.com/pinnaclesoft-ko/be-node-seoul-data-mcp",
       "latest_mcp_domain": [
         "공공데이터"
       ],
@@ -112,10 +112,10 @@
         "공공데이터"
       ],
       "latest_capability": [
-        "검색"
+        "조회"
       ],
       "latest_risk_scope": [
-        "문서"
+        "api"
       ],
       "latest_required_field_proxy": {
         "repository": true,
@@ -152,7 +152,7 @@
         "status": "fresh",
         "repository": "pinnaclesoft-ko/be-node-seoul-data-mcp",
         "checked_at": "2026-05-07T05:20:56+00:00",
-        "age_days": 6.49,
+        "age_days": 6.3,
         "freshness_sla_days": 7.0,
         "missing_fields": [],
         "github_pushed_at": "2025-04-03T06:29:08Z",
@@ -225,7 +225,7 @@
         "status": "fresh",
         "repository": "Koomook/data-go-mcp-servers",
         "checked_at": "2026-05-07T05:20:56+00:00",
-        "age_days": 6.49,
+        "age_days": 6.3,
         "freshness_sla_days": 7.0,
         "missing_fields": [],
         "github_pushed_at": "2025-09-16T22:32:34Z",
@@ -298,7 +298,7 @@
         "status": "fresh",
         "repository": "Koomook/data-go-mcp-servers",
         "checked_at": "2026-05-07T05:20:56+00:00",
-        "age_days": 6.49,
+        "age_days": 6.3,
         "freshness_sla_days": 7.0,
         "missing_fields": [],
         "github_pushed_at": "2025-09-16T22:32:34Z",
@@ -371,7 +371,7 @@
         "status": "fresh",
         "repository": "Koomook/data-go-mcp-servers",
         "checked_at": "2026-05-07T05:20:56+00:00",
-        "age_days": 6.49,
+        "age_days": 6.3,
         "freshness_sla_days": 7.0,
         "missing_fields": [],
         "github_pushed_at": "2025-09-16T22:32:34Z",
@@ -444,7 +444,7 @@
         "status": "fresh",
         "repository": "Koomook/data-go-mcp-servers",
         "checked_at": "2026-05-07T05:20:56+00:00",
-        "age_days": 6.49,
+        "age_days": 6.3,
         "freshness_sla_days": 7.0,
         "missing_fields": [],
         "github_pushed_at": "2025-09-16T22:32:34Z",
@@ -517,7 +517,7 @@
         "status": "fresh",
         "repository": "Koomook/data-go-mcp-servers",
         "checked_at": "2026-05-07T05:20:56+00:00",
-        "age_days": 6.49,
+        "age_days": 6.3,
         "freshness_sla_days": 7.0,
         "missing_fields": [],
         "github_pushed_at": "2025-09-16T22:32:34Z",
@@ -590,7 +590,7 @@
         "status": "fresh",
         "repository": "Koomook/data-go-mcp-servers",
         "checked_at": "2026-05-07T05:20:56+00:00",
-        "age_days": 6.49,
+        "age_days": 6.3,
         "freshness_sla_days": 7.0,
         "missing_fields": [],
         "github_pushed_at": "2025-09-16T22:32:34Z",
@@ -634,9 +634,67 @@
     {
       "source": "awesome-mcp-korea Public Data",
       "event_model": "mcp_directory_entry",
+      "title": "be-node-seoul-data-mcp",
+      "url": "https://github.com/pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "event_at": "2026-05-13T12:38:01.172305+00:00",
+      "mcp_domain": [
+        "공공데이터"
+      ],
+      "provider": [
+        "공공데이터"
+      ],
+      "capability": [
+        "조회"
+      ],
+      "risk_scope": [
+        "api"
+      ],
+      "project_health": [
+        "mcp",
+        "api",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "source_section": true,
+        "source_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "risk_scope_signal",
+      "title": "be-node-seoul-data-mcp",
+      "url": "https://github.com/pinnaclesoft-ko/be-node-seoul-data-mcp",
+      "event_at": "2026-05-13T12:38:01.172305+00:00",
+      "mcp_domain": [
+        "공공데이터"
+      ],
+      "provider": [
+        "공공데이터"
+      ],
+      "capability": [
+        "조회"
+      ],
+      "risk_scope": [
+        "api"
+      ],
+      "project_health": [
+        "mcp",
+        "api",
+        "서버"
+      ],
+      "required_field_proxy": {
+        "repository": true,
+        "risk_scope": true,
+        "evidence_url": true
+      }
+    },
+    {
+      "source": "awesome-mcp-korea Public Data",
+      "event_model": "mcp_directory_entry",
       "title": "opendata-mcp",
       "url": "https://github.com/ceami/opendata-mcp",
-      "event_at": "2026-05-13T17:07:26.739891+00:00",
+      "event_at": "2026-05-12T20:29:36.197664+00:00",
       "mcp_domain": [
         "공공데이터"
       ],
@@ -665,7 +723,7 @@
       "event_model": "risk_scope_signal",
       "title": "opendata-mcp",
       "url": "https://github.com/ceami/opendata-mcp",
-      "event_at": "2026-05-13T17:07:26.739891+00:00",
+      "event_at": "2026-05-12T20:29:36.197664+00:00",
       "mcp_domain": [
         "공공데이터"
       ],
@@ -694,7 +752,7 @@
       "event_model": "mcp_directory_entry",
       "title": "korea-stats-mcp",
       "url": "https://github.com/Dayoooun/korea-stats-mcp",
-      "event_at": "2026-05-13T17:07:26.739888+00:00",
+      "event_at": "2026-05-12T20:29:36.197659+00:00",
       "mcp_domain": [
         "kosis",
         "통계"
@@ -723,7 +781,7 @@
       "event_model": "mcp_directory_entry",
       "title": "korea-public-data-mcp",
       "url": "https://github.com/hjsh200219/korea-public-data-mcp",
-      "event_at": "2026-05-13T17:07:26.739886+00:00",
+      "event_at": "2026-05-12T20:29:36.197657+00:00",
       "mcp_domain": [
         "공공데이터"
       ],
@@ -750,7 +808,7 @@
       "event_model": "mcp_directory_entry",
       "title": "k-targo-subway-mcp-server",
       "url": "https://github.com/slicequeue/k-targo-subway-mcp-server",
-      "event_at": "2026-05-13T17:07:26.739884+00:00",
+      "event_at": "2026-05-12T20:29:36.197655+00:00",
       "mcp_domain": [
         "교통"
       ],
@@ -779,7 +837,7 @@
       "event_model": "risk_scope_signal",
       "title": "k-targo-subway-mcp-server",
       "url": "https://github.com/slicequeue/k-targo-subway-mcp-server",
-      "event_at": "2026-05-13T17:07:26.739884+00:00",
+      "event_at": "2026-05-12T20:29:36.197655+00:00",
       "mcp_domain": [
         "교통"
       ],
@@ -808,7 +866,7 @@
       "event_model": "mcp_directory_entry",
       "title": "k-mfds-fooddb-mcp-server",
       "url": "https://github.com/slicequeue/k-mfds-fooddb-mcp-server",
-      "event_at": "2026-05-13T17:07:26.739883+00:00",
+      "event_at": "2026-05-12T20:29:36.197652+00:00",
       "mcp_domain": [],
       "provider": [],
       "capability": [
@@ -832,7 +890,7 @@
       "event_model": "mcp_directory_entry",
       "title": "data4library-mcp",
       "url": "https://github.com/isnow890/data4library-mcp",
-      "event_at": "2026-05-13T17:07:26.739881+00:00",
+      "event_at": "2026-05-12T20:29:36.197650+00:00",
       "mcp_domain": [
         "통계",
         "도서관"
@@ -857,7 +915,7 @@
       "event_model": "mcp_directory_entry",
       "title": "data-go-mcp-servers",
       "url": "https://github.com/Koomook/data-go-mcp-servers",
-      "event_at": "2026-05-13T17:07:26.739879+00:00",
+      "event_at": "2026-05-12T20:29:36.197646+00:00",
       "mcp_domain": [
         "data.go.kr",
         "공공데이터"
@@ -878,64 +936,6 @@
         "repository": true,
         "source_section": true,
         "source_url": true
-      }
-    },
-    {
-      "source": "awesome-mcp-korea Public Data",
-      "event_model": "mcp_directory_entry",
-      "title": "be-node-seoul-data-mcp",
-      "url": "https://github.com/pinnaclesoft-ko/be-node-seoul-data-mcp",
-      "event_at": "2026-05-13T17:07:26.739860+00:00",
-      "mcp_domain": [
-        "공공데이터"
-      ],
-      "provider": [
-        "공공데이터"
-      ],
-      "capability": [
-        "조회"
-      ],
-      "risk_scope": [
-        "api"
-      ],
-      "project_health": [
-        "mcp",
-        "api",
-        "서버"
-      ],
-      "required_field_proxy": {
-        "repository": true,
-        "source_section": true,
-        "source_url": true
-      }
-    },
-    {
-      "source": "awesome-mcp-korea Public Data",
-      "event_model": "risk_scope_signal",
-      "title": "be-node-seoul-data-mcp",
-      "url": "https://github.com/pinnaclesoft-ko/be-node-seoul-data-mcp",
-      "event_at": "2026-05-13T17:07:26.739860+00:00",
-      "mcp_domain": [
-        "공공데이터"
-      ],
-      "provider": [
-        "공공데이터"
-      ],
-      "capability": [
-        "조회"
-      ],
-      "risk_scope": [
-        "api"
-      ],
-      "project_health": [
-        "mcp",
-        "api",
-        "서버"
-      ],
-      "required_field_proxy": {
-        "repository": true,
-        "risk_scope": true,
-        "evidence_url": true
       }
     },
     {
